@@ -57,7 +57,7 @@ Sub DwnldData()
          
     ' Set the destination path
 
-    destinationPath = "C:\Users\magda\Documents\testy\" & destFolderName
+    destinationPath = ThisWorkbook.Path & "\" & destFolderName
     
     If Not fso.FolderExists(destinationPath) Then
     
@@ -242,3 +242,4 @@ For i = 1 To 12
     ThisWorkbook.Sheets("FORM").ComboBox1.AddItem CStr(i)
 Next i
 End Sub
+
